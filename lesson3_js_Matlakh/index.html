@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lesson3</title>
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks colors" onclick="openTab(event, 'Colors')">Colors</button>
+        <button class="tablinks bordrad" onclick="openTab(event, 'BordRad')">Border-Radius</button>
+    </div>
+
+    <div id="Colors" class="tabcontent">
+        <h1 class="title">Нажмите пробел</h1>
+        <p class="color_name"></p>
+        <p class="color_name-hex"></p>
+    </div>
+
+    <div id="BordRad" class="tabcontent bordrad-content">
+        <input type="range" class="input input-Top-Left" minlength="0" maxlength="50">
+        <input type="range" class="input input-Top-Right" minlength="0" maxlength="50">
+        <input type="range" class="input input-Bottom-Left" minlength="0" maxlength="50">
+        <input type="range" class="input input-Bottom-Right" minlength="0" maxlength="50">
+
+        <div class="square"></div>
+
+        <span class="square__bordrad-tl"></span>
+        <span class="square__bordrad-tr"></span>
+        <span class="square__bordrad-bl"></span>
+        <span class="square__bordrad-br"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
