@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="header">
+        <h1>My To-Do List </h1>
+        <input type="text" placeholder="Add New List">
+        <ul class="toDoList"> 
+        </ul>
+        <div class="buttons">
+            <button class="save">Сохранить</button>
+            <button class="clear">Очистить</button>
+            <button class="showTips">Справка</button>
+        </div>
+    </div>
+    <div class = "overlay">
+        <a href="javascript:void(0)" class="closeTips">&times;</a>
+        <ul class="tips">
+            <li>Для добавления пункта напишите текст в поле ввода и нажмите Enter</li>
+            <li>Чтобы удалить один пункт, наведите на него и нажмите на значок корзины</li>
+            <li>Чтобы удалить все списки дел, нажмите "Очистить"</li>
+            <li>Нажмите "Сохранить", чтобы сохранить список дел на потом</li>
+        </ul>
+    </div>
+     <script src="./js/main.js"></script>
+</body>
+</html>
