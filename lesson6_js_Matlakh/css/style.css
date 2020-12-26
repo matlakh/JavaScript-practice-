@@ -16,6 +16,14 @@ h1{
     padding: 10px 28px;
     font-weight: normal;
 }
+h3{
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+}
+p{
+    margin: 0;
+}
 input{
     background: white;
     width: 100%;
@@ -23,7 +31,7 @@ input{
     height: 50px;
     font-size: 20px;
     font-weight: 0.5px;
-    padding-left: 25px;
+    padding-left: 50px;
     border: 3px solid gray;
     color: gray;
 }
@@ -102,38 +110,68 @@ button:hover {
     color: #818181;
     display: block;
 }
-.toDoList {
-    list-style-type: none;
+.toDoList { 
     margin: 0;
     padding: 0;
-}
-.toDoList li {
+    border: 2px solid #c9828b;
     background: #f7f7f7;
+}
+.wrapper {
+    width: 500px;
     height: 50px;
     line-height: 50px;
     cursor: pointer;
     font-size: 20px;
+    position: relative;
+    margin: 0 auto;
 }
-.toDoList li span .toDoList-text {
+.wrapper span .toDoList-text {
     padding: 0 8px;
 }
-.toDoList li:nth-child(2n) {
-    background: #edf1f5;
+.toDoList-trash{
+    display: none;
+    position: absolute;
+    right: 0;
 }
-.toDoList li:hover span .toDoList-trash {
+.wrapper:hover span.toDoList-trash {
+    display: inline-block;
     width: 50px;
     opacity: 1.0;
-    margin-left: 5px;
 }
 .display {
     display: none;
     transition: 0.3s linear;
 }
-.checked {
-    color: gray;
-    text-decoration: line-through;
-}
 
+label{
+    width: 30px; 
+    height: 30px; 
+    display: inline-block; 
+    position: absolute;
+    top: 50%;
+    left: 0; 
+    transform: translate(0, -50%);
+    text-align: left;
+}
+input[type="checkbox"]{
+    display: none;
+    left: 0;
+}
+input[type="checkbox"] + span {
+    position: absolute; 
+    display: inline-block;
+    width: 100%; height: 100%;
+    background: url("../img/unchecked.png") no-repeat; 
+    cursor: pointer; 
+    left: 0; 
+}
+input[type="checkbox"]:checked + span  	{
+    background: url("../img/cheked.png") no-repeat;    
+
+}
+.checked {
+    color: #c0c0c0;
+}
 .fa-trash-alt {
     color: #AF1B3F;
     margin-left: 20px;
