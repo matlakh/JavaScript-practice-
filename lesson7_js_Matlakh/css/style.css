@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+.tab {
+    overflow: hidden;
+    background-color: #28CEA7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    display: flex;
+}
+.tabs__content {
+    display: none; 
+  }
+.tabs__content.active {
+    display: block;
+  }
+.tablinks{
+    margin: 0 auto;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.tab button:hover {
+    background-color: #5483A0;
+}
+.tab button.active {
+    background-color: #6A5D9D;
+    color: #fff;
+}
+.tabcontent {
+    display: none;
+    border: 1px solid #961296;
+    border: none;
+    height: 800px;
+    margin: 0;
+}
+.title{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.color_name,
+.color_name-hex{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+.bordrad-content{
+    background-color: antiquewhite;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.square{
+    display: block;
+    background: #a2e1d8;
+    border: 10px solid #961296;
+    width: 250px;
+    height: 250px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.square__bordrad-tl,
+.square__bordrad-tr,
+.square__bordrad-bl,
+.square__bordrad-br{
+    display: block;
+    color: #000;
+}
+.array__content{
+    background: #FFF2E3;
+}
+.array-content {
+    position: relative;
+    margin: 30px -40px 0 -40px;
+    padding: 10px 40px 0 40px;
+    background: rgb(255, 248, 243);
+}
+.array-content:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+h1 {
+    padding-top: 30px;
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button-wrapper{
+    margin: 0 auto;
+    text-align: center;
+}
+.button{
+    
+    margin-right: 50px;
+    width: 100px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 22px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    background: #121212;
+}
+.button__rus{
+    background: #fc000b;
+}
+.button__eng{
+    margin-right: 0;
+    margin-left: 50px;
+    background: #8a00eb;
+}

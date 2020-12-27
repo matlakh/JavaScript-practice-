@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lesson_7</title>
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks array">Array</button>
+        <button class="tablinks colors">Colors</button>
+        <button class="tablinks bordrad">Border-Radius</button>
+    </div>
+
+    <div id="Array" class="tabcontent array__content">
+        <h1>Array</h1>
+        <div class="button-wrapper">
+            <button class="button button__rus">RUS</button>
+            <button class="button button__eng">ENG</button>
+        </div>
+    </div>
+
+    <div id="Colors" class="tabcontent">
+        <h1 class="title">Нажмите пробел</h1>
+        <p class="color_name"></p>
+        <p class="color_name-hex"></p>
+    </div>
+
+    <div id="BordRad" class="tabcontent bordrad-content">
+        <input type="range" class="input input-Top-Left" minlength="0" maxlength="50">
+        <input type="range" class="input input-Top-Right" minlength="0" maxlength="50">
+        <input type="range" class="input input-Bottom-Left" minlength="0" maxlength="50">
+        <input type="range" class="input input-Bottom-Right" minlength="0" maxlength="50">
+
+        <div class="square"></div>
+
+        <span class="square__bordrad-tl"></span>
+        <span class="square__bordrad-tr"></span>
+        <span class="square__bordrad-bl"></span>
+        <span class="square__bordrad-br"></span>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
