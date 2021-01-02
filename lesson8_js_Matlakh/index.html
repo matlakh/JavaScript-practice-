@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="message"></div>
+    <form action="#" class="js-form" method="POST">
+        <div class="form-inner">
+            <h2>Подтвердите ваше участие на мероприятии</h2>
+            <div class="form-content">
+                <h3>Ваше имя:</h3>
+                <p><input class="nameInput" type="text" name="name" required data-validate-field="name"></p>
+                <h3>Ваш номер телефона:</h3>
+                <p><input class="phoneInput" type="tel" name="phone" required></p>
+                <h3>Електронная почта:</h3>
+                <p><input class="emailInput" type="email" name="email" required data-validate-field="email"></p>
+                <h3>Я приглашен...</h3>
+                <p>
+                    <select name="attending">
+                        <option value="All events">На все мероприятия</option>
+                        <option value="Ceremony">На церемонию</option>
+                        <option value="Party">На вечеринку</option>
+                    </select>
+                </p>
+                <p><input type="submit" value="Я подтверждаю"></p>
+            </div>
+        </div>
+    </form>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/just-validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
